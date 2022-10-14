@@ -1,0 +1,146 @@
+/* ------------ Navbar Start ---------- */
+/* ------------ Baggrund på scroll nav Start ---------- */
+/* ------------ Baggrund på scroll nav End ---------- */
+/* ------------ Dropdown Start ---------- */
+/* ------------ Dropdown End ---------- */
+/* ------------  nav mobile Start ---------- */
+/* ------------  nav mobile end ---------- */
+/* ------------ Knapper style Start ---------- */
+/* ------------ Knapper style End ---------- */
+/* ------------ Navbar End ---------- */
+
+.Logo {
+	margin-top: 30px;
+	width: 273px;
+	height: 52px;
+	z-index: 999;
+	position: relative;
+}
+
+header {
+	background-color: $primary-color;
+	width: 100%;
+ }
+#nav {
+	background-color: $primary-color;
+	position: fixed;
+	width: 100%;
+	z-index: 2;
+}
+.nav-container {
+	margin-inline: auto;
+	display: flex;
+	position: relative;
+	justify-content: space-between;
+	align-items: center;
+	margin-right: 30px;
+	margin-left: 30px;
+	height: 150px;
+}
+
+nav {
+	ul {
+		list-style: none;
+		display: flex;
+		gap: 30px;
+		font-size: 28px;
+		margin-top: 30px;
+		position: relative;
+	}
+	border-bottom: 2px solid transparent;
+	padding-bottom: 0.5em;
+	transition: all 200ms ease;
+	cursor: pointer;
+}
+a {
+	color: inherit;
+	text-decoration: none;
+	color: black;
+	text-decoration: none;
+	&:hover {
+		color: rgba(96, 96, 96, 0.914);
+	}
+
+	
+}
+ul {
+	display: flex;
+	align-items: center;
+	font-family: $font-main;
+	
+}
+li {
+	padding: 15px;
+	list-style: none;
+	
+}
+#burger{
+	display: none;
+}
+.nav-hr{
+	border: 1px solid black;	
+	z-index: 99;
+	position: relative;
+}
+.change-color{
+	fill: #fff;
+}
+
+@media (max-width: 1024px) {
+	#burger {
+		margin-top: 30px;
+		box-sizing: initial;
+		display: block;
+		width: 29px;
+		height: 26px;
+		color: black;
+		cursor: pointer;
+		z-index: 2;
+		margin-bottom: 0.5em;
+		&:focus {
+			border: none;
+			outline: none;
+		}
+	}
+	nav {
+		position: absolute;
+		right: 0;
+		top: 0em;
+		background: #000000E6;
+		min-width: 100%;
+		padding: 2em;
+		box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+		clip-path: circle(0% at 100% 0);
+		height: 100vh;
+		transition: all 500ms ease-in-out;
+		ul {
+			flex-direction: column;
+		}
+		
+	}
+	nav.show {
+		clip-path: circle(200% at 100% 0);
+		transition-duration: 300ms;
+	}
+	.nav-container{
+		margin: 0;
+		padding-right: 30px;
+		padding-left: 30px;
+
+	}
+	.icon{
+		display: block;	
+		color: $SoMe;
+		width: 27px;
+		height: 27px;
+	}
+	a{
+		color: white;
+	}
+	nav ul{
+	top: 6em;
+
+	}
+	
+	
+}

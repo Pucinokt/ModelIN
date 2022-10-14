@@ -1,0 +1,19 @@
+// mixins
+@import "abstracts/mixins"; 
+// base
+@import "base/global";
+
+// layout
+@import "layout/accordions";
+@import "layout/footer";
+@import "layout/navbar";
+@import"layout/portfolio_subpage";
+
+
+// pages
+@import"pages/about_box_section";
+@import"pages/about_page";
+@import"pages/contact_page";
+@import"pages/home_page";
+@import"pages/portfolio_page";
+

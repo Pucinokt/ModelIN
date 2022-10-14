@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>contact</title>
+</head>
+<body>
+<!-- navbar start -->
+    <div id="navbar"></div>
+<!-- navbar end -->
+
+    <div style="height:150px"></div>
+
+<section class="contact-section">
+        <h1>Contact</h1>
+        <p>Email me to order a design or decoration project, supervision, or ask general questions: <br> Contact form for details on the stages and general design project progress, timing, and budget.</p>
+</section>
+
+<!-- CONTACT FORM START -->
+<form class="contact-container">
+    <div class="contact-txt">
+        <div class="first-contact-section">
+            <input class="email contact-field-1"  type="email" name="email" 
+                  placeholder="Email" required>
+            <textarea class="message contact-field-2" type="text" name="message" cols="50" rows="8"
+                placeholder="Besked"></textarea>
+            <button id="contact-btn" onclick="timer(); remove()" value="submit" type="submit">Send Message</button>
+            <div id="valid">
+            </div>
+        </div>
+        </section>
+    </div>
+</form>
+<!-- CONTACT FORM END -->
+
+<!-- details start -->
+<div id="details"></div>
+<!-- details end -->
+
+
+<!-- footer start -->
+    <div id="footer"></div>
+<!-- footer end -->
+
+<!-- script start -->
+    <script src="../js/api/contactApi.js"></script>
+    <script src="../js/components/navbar.js"></script>
+    <script src="../js/components/footer.js"></script>
+    <script src="../js/components/index.js"></script>
+    <script src="../js/components/details.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+
+
+.footer {
+    width: 100%;
+    background-color: $tertiary-color;
+    height: 531px;
+    font-family: $font-sec;
+    font-size: 14px;
+    @include flex-center-column;
+
+    a {
+        color: white;
+        @include flex-center-vertical;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    .footer-ul {
+        @include flex-center-horizontal;
+        @include flex-center-column;
+        color: $primary-color;
+    }
+
+    .footer-item_2 {
+        padding: 60px 0;
+    }
+    }
+
+@media (min-width: 1024px) {
+
+    .footer-wrap{
+        @include flex-row;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    .footer{
+        font-size: 18px;
+    }
+
+}
